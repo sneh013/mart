@@ -2,7 +2,7 @@ import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
- 
+ app.use("/api/users",)
 import connectDB from './config/db.js'
 
 
@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
     res.send('API is running...')
 });
 app.listen(port, () => 
-console.log('server running on port:${port}'));
+console.log(`server running on port:${port}`));
